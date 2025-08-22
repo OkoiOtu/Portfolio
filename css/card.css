@@ -14,6 +14,11 @@
   position: relative;
 }
 
+.container-card button {
+  border: none;
+  outline: none;
+}
+
 .cards {
   display: flex;
   flex-wrap: nowrap;
@@ -76,10 +81,6 @@ h3 {
   z-index: 10;
 }
 
-.arrow:hover {
-    background-color: wheat;
-}
-
 .arrow.left {
   left: 0px;
 }
@@ -115,8 +116,12 @@ h3 {
 }
 
 @media (max-width: 1000px) {
-  .container {
-    width: 100vw;
+  .container-card {
+    width: 90vw;
+  }
+
+  .cards {
+    margin: 0 15px;
   }
 
   .panel {
